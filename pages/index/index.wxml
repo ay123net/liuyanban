@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="content-background">
+    <block wx:if="{{userInfo.nickName == null || userInfo.nickName == ''}}">
+            <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="agreeGetUser">
+                    <view class="username">
+                        <text>请点击登录</text>
+                    </view>
+            </button>
+    </block>
+    <block wx:else>
+        <image src="{{userInfo.avatarUrl}}" style="float:left;clear:both;"></image>
+        <text style="display: table-cell;vertical-align:middle;height:80rpx;">{{userInfo.nickName}}</text>
+    </block>
+ </view>
+<view class="content-background">
+  <form bindsubmit='onInputSubmit'> 
+    <textarea 
+      name="textarea"
+      placeholder = "分享新鲜事"
+      value="{{textareaDefault}}"
+      show-confirm-bar="false"
+    />
+    <button 
+      type="primary"
+      form-type="submit"
+      hover-stay-time="200" 
+    > 发表 </button>
+    
+    
+  </form>
+</view>
+
+<block wx:for="{{msgList}}" wx:key="{{item}}">
+  <view class="content-background">
+    <view class="user-info">
+      <image src="{{item.avatarUrl}}"></image>
+      <view class="user-name">{{item.nickName}}</view>
+      <view class="create-time">{{item.msgdate}}</view>
+    </view>
+    <view><text>{{item.msgString}}</text></view>
+    
+    <view class="zan-pinglun">
+      <image src="{{item.zanImg}}" bindtap="onZanPress" id="{{index}}"></image> 
+      <image src="../../image/pinglun.png" name="pinglun" id="{{index}}"></image>
+    </view>
+    
+  </view>
+</block>
+
+<view style="margin-top:50rpx;height:80rpx;text-align:center;font-size:12px;color:#999">- 已经到底部了 -</view>
+
+

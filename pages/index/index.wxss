@@ -1,0 +1,84 @@
+/**index.wxss**/
+page{
+  background-color: #EEEEEE;
+}
+/* 输入框样式 */
+textarea {
+  font-size: 14px;
+}
+
+/* 留言背景 */
+.content-background{
+  background-color: #FFFFFF;
+  margin: 15rpx 15rpx 0 15rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  font-size: 14px;
+  overflow: hidden;   /* 防止背景高度不被子元素float撑开 */
+}
+
+.content-background button{
+  font-size: 14px;
+}
+
+/* 用户头像 */
+.content-background image{
+  border-radius: 50rpx;
+  height: 80rpx;
+  width: 80rpx;
+  float:left;
+  margin-right:20rpx
+}
+
+/* 用户名样式 */
+.content-background .user-info{
+  margin-bottom: 20rpx;
+}
+
+/* 用户名样式 */
+.content-background .user-name{
+  font-size: 12px;
+  margin-bottom: 10rpx;
+}
+
+/* 留言时间样式 */
+.content-background .create-time{
+  font-size: 11px;
+  color: #999;
+}
+
+/* 留言内容样式 */
+.content-background .content{
+  font-size: 14rpx;
+  color: #555;
+}
+
+/* 点赞评论 */
+.content-background .zan-pinglun{
+  float: right;
+}
+.content-background .zan-pinglun image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 50rpx;
+  margin-left: 50rpx;
+  margin-bottom: 20rpx;
+  border-radius: 0
+}
+.background-color-2{
+  background-color: #FFFFFF;
+}
+
+van-button{
+  margin-top: 40rpx;
+  margin-right: 0;
+  display: flex;
+}
+
+/* tab style */
+.tab-inative{
+  color: #000;
+}
+.tab-ative{
+  color: #6E8;
+}

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/create/create",
+    "pages/logs/logs"
+
+  ],
+  "backgroundTextStyle": "#EEEEEE",
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#66aa88",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#6699cc",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/tar-home.png",
+        "selectedIconPath": "image/tar-home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/create/create",
+        "iconPath": "image/tar-about.png",
+        "selectedIconPath": "image/tar-about-on.png",
+        "text": "发表"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/tar-comments.png",
+        "selectedIconPath": "image/tar-comments-on.png",
+        "text": "日志"
+      }
+    ]
+  }
+}
